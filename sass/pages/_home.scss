@@ -1,0 +1,20 @@
+/* Estilos para la página principal o index */
+
+/* Estilos para la imagen de fondo y el texto */
+.full-screen {
+    @include flex-center(column); 
+    height: 100vh;
+    background-image: url('../img/backgroundIndex1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  .text-box {
+    background-color: rgba(255, 255, 255, 0.932);
+    padding: 25px;
+    margin-left: 50px;
+    border: 3px solid #8fc16f;
+    max-width: 400px;
+ }
+  

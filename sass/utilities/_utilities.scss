@@ -1,0 +1,40 @@
+/* Efectos auxiliares y transiciones */
+
+/* Efecto a los enlaces */
+.nav-link:hover {
+    color: #3a5a40 !important;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Efecto para las imágenes del carousel */
+  .carousel-item img {
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item:hover img {
+    transform: scale(1.02);
+  }
+  
+  /* Efectos de los botones y la retroalimentación */
+  .feedback-btn {
+    display: none;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Efecto para la cara feliz */
+  #util:checked + label {
+    border: 3px solid green;
+  }
+  
+  /* Efecto para la cara triste */
+  #no-util:checked + label {
+    border: 3px solid red;
+  }
+  

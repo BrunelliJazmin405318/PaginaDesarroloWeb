@@ -1,0 +1,114 @@
+/* Estilos para componentes como cards, botones, iconos sociales */
+
+/* Título bordeado (Planes de entrenamiento y nutrición) */
+.titulo-bordeado {
+  color: #3a5a40;
+  /* Verde oscuro */
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.titulo-bordeado::before,
+.titulo-bordeado::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #8fc16f;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.titulo-bordeado::before {
+  left: -60px;
+}
+
+.titulo-bordeado::after {
+  right: -60px;
+}
+
+/* Interacción con las cards */
+.card {
+  @extend %box-shadow;
+  background-color: #fff;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $box-shadow-hover;
+  }
+}
+
+
+
+/* Iconos de redes sociales */
+.social-icons a {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a:hover {
+  background-color: #8fc16f;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.btn-primary {
+  @extend %btn-base;
+  background-color: #8fc16f;
+  color: #fff;
+
+  &:hover {
+    background-color: darken(#8fc16f, 10%);
+  }
+}
+
+.btn-secondary {
+  @include button($bg-color: #3a5a40);
+}
+
+//transicion para los elementos del navbar
+.navbar {
+  .navbar-nav {
+    .nav-link {
+      color: $color-secundario !important;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2) !important;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+
+      &:hover {
+        color: $color-hover !important;
+        text-decoration: underline;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3) !important;
+      }
+    }
+  }
+}
+ //animacion para los iconos
+.footer {
+  .social-icons {
+    a {
+      display: inline-block;
+      margin-left: 10px;
+      border-radius: 50%;
+      padding: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: $color-hover;
+        animation: bounce 0.5s;
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* Estilos generales globales */
+/* Fondo de la página principal */
+body {
+  background-color: #ebf3eb;
+  color: #3a5a40;
+}
+
+/* Fondo de los contenedores */
+.container {
+  background-color: #f7fcf7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Fondo del pie de página */
+footer {
+  background-color: #e8f5e9;
+}
+
+/* Fondo de las cards */
+.card {
+  background-color: #ffffff; /* Fondo blanco para las tarjetas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los enlaces del navbar */
+.navbar-nav .nav-link {
+  color: #393f36 !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #6f7969 !important;
+  text-decoration: underline;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Navbar, más espacio entre las opciones */
+.navbar-nav .nav-item {
+  margin-right: 45px;
+}
+
+.text-green {
+  color: #8fc16f;
+}
+
+/* Cambiar el fondo del navbar */
+.navbar {
+  background-color: #d9fbd9 !important;
+}
+
+/* Cambiar el fondo del footer */
+.footer {
+  background-color: #c8e6c9 !important;
+}
+
+@media (max-width: 768px) {
+  .full-screen {
+    height: 60vh;
+  }
+  .text-box {
+    margin-left: 0;
+    max-width: 90%;
+    padding: 20px;
+  }
+}
+/* Estilos para componentes como cards, botones, iconos sociales */
+/* Título bordeado (Planes de entrenamiento y nutrición) */
+.titulo-bordeado {
+  color: #3a5a40; /* Verde oscuro */
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.titulo-bordeado::before,
+.titulo-bordeado::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #8fc16f;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.titulo-bordeado::before {
+  left: -60px;
+}
+
+.titulo-bordeado::after {
+  right: -60px;
+}
+
+/* Interacción con las cards */
+.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos de redes sociales */
+.social-icons a {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a:hover {
+  background-color: #8fc16f;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+/* Estilos para la página principal o index */
+/* Estilos para la imagen de fondo y el texto */
+.full-screen {
+  height: 100vh;
+  background-image: url("../img/backgroundIndex1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.text-box {
+  background-color: rgba(255, 255, 255, 0.932);
+  padding: 25px;
+  margin-left: 50px;
+  border: 3px solid #8fc16f;
+  max-width: 400px;
+}
+
+/* Efectos auxiliares y transiciones */
+/* Efecto a los enlaces */
+.nav-link:hover {
+  color: #3a5a40 !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Efecto para las imágenes del carousel */
+.carousel-item img {
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.02);
+}
+
+/* Efectos de los botones y la retroalimentación */
+.feedback-btn {
+  display: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Efecto para la cara feliz */
+#util:checked + label {
+  border: 3px solid green;
+}
+
+/* Efecto para la cara triste */
+#no-util:checked + label {
+  border: 3px solid red;
+}
+
+/*# sourceMappingURL=estilos.css.map */

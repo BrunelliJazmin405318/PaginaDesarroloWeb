@@ -1,0 +1,75 @@
+/* Estilos generales globales */
+
+/* Fondo de la página principal */
+body {
+    background-color: $background-color; 
+    color: $primary-color; 
+  }
+  
+  /* Fondo de los contenedores */
+  .container {
+    background-color: #f7fcf7; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+  }
+  
+  /* Fondo del pie de página */
+  footer {
+    background-color: $footer-background-color; 
+  }
+  
+  /* Fondo de las cards */
+  .card {
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo de los enlaces del navbar */
+  .navbar-nav .nav-link {
+    color: #393f36 !important; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2) !important; 
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #6f7969 !important; 
+    text-decoration: underline;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3) !important; 
+  }
+  
+  /* Navbar, más espacio entre las opciones */
+  .navbar-nav .nav-item {
+    margin-right: $navbar-item-margin;
+  }
+  
+  .text-green {
+    color: #8fc16f;
+  }
+  
+  /* Cambiar el fondo del navbar */
+  .navbar {
+    background-color: $background-color !important;
+  }
+  
+  /* Cambiar el fondo del footer */
+  .footer {
+    background-color: #c8e6c9 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .full-screen {
+      height: 60vh;
+    }
+  
+    .text-box {
+      margin-left: 0;
+      max-width: 90%;
+      padding: 20px;
+    }
+  }
+  
